@@ -1,1 +1,12 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>All Posts - scp的扯淡时间</title><link>https://scp096.github.io/posts/</link><description>All Posts | scp的扯淡时间</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>crazyinchina@outlook.com (scp096)</managingEditor><webMaster>crazyinchina@outlook.com (scp096)</webMaster><lastBuildDate>Sun, 11 Dec 2022 22:43:28 +0800</lastBuildDate><atom:link href="https://scp096.github.io/posts/" rel="self" type="application/rss+xml"/><item><title>hugo 你好</title><link>https://scp096.github.io/posts/hugo-hello/</link><pubDate>Sun, 11 Dec 2022 22:43:28 +0800</pubDate><author>scp096</author><guid>https://scp096.github.io/posts/hugo-hello/</guid><description>出来打工有五年了，一直没有动手记录技术、生活方面的事情，实属有点懒。现在有了平台，有了环境，有了设备，是时候写一些东西了。目前只用了 hugo 最基础的功能，连 i18n 都不知道怎么配置，很多内容是英文的，等研究明白了会说说 hugo 的使用感受。希望后面的内容不会来的很慢。</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>All Posts - scp的扯淡时间</title><link>https://scp096.github.io/posts/</link><description>All Posts | scp的扯淡时间</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>crazyinchina@outlook.com (scp096)</managingEditor><webMaster>crazyinchina@outlook.com (scp096)</webMaster><lastBuildDate>Wed, 11 Jan 2023 11:58:55 +0800</lastBuildDate><atom:link href="https://scp096.github.io/posts/" rel="self" type="application/rss+xml"/><item><title>Makefile一些用法</title><link>https://scp096.github.io/posts/makefile/</link><pubDate>Wed, 11 Jan 2023 11:58:55 +0800</pubDate><author>scp096</author><guid>https://scp096.github.io/posts/makefile/</guid><description><![CDATA[注释 前面加 #
+不输出指令 指令前面加 @
+纯指令 .PHONY:*** 指定为纯指令，而非文件 定义变量 = 是最基本的赋值，后续的=会影响前面的值 := 是覆盖之前的值，不会影响前面的值 ?= 是如果没有被赋值过就赋予等号后面的值 += 是添加等号后面的值 make指令后面添加的变量赋值一定会覆盖掉脚本定义的值
+内置变量 .DEFAULT_GOAL=*** Makefile默认执行指令
+默认为 all， 可以修改成别的 $@ 指令本身 $^ 所有依赖项 $&lt; 第一个依赖项 引用 Makefile 变量 &ldquo;$()&rdquo; 或者 &ldquo;${}&rdquo;
+调用 shell &ldquo;$(shell shell指令)&rdquo;
+通常用于复杂 shell 语句定义 Makefile 变量
+在 shell 里定义的变量啊无法跨多个 shell 语句
+指令模糊匹配 在指令上加%
+条件判断 可以通过判断变量决定是否定义指令，但不能作用于指令内容 分组依赖 一个指令的依赖不一定需要所有定义在一起，也可以分开定义依赖
+用双冒号&quot;::&ldquo;来设置依赖
+函数定义 可以定义函数，使用 call 来调用，第一个是函数，后面是参数，用逗号隔开]]></description></item><item><title>hugo初使用</title><link>https://scp096.github.io/posts/hugo-hello/</link><pubDate>Sun, 11 Dec 2022 22:43:28 +0800</pubDate><author>scp096</author><guid>https://scp096.github.io/posts/hugo-hello/</guid><description>出来打工有五年了，一直没有动手记录技术、生活方面的事情，实属有点懒。现在有了平台，有了环境，有了设备，是时候写一些东西了。目前只用了 hugo 最基础的功能，连 i18n 都不知道怎么配置，很多内容是英文的，等研究明白了会说说 hugo 的使用感受。希望后面的内容不会来的很慢。</description></item></channel></rss>
